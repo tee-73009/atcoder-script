@@ -28,14 +28,9 @@ const gmFetchJson = (url) => {
     });
 };
 
-/** 問題一覧取得 */
-const getProblems = () => gmFetchJson("https://kenkoooo.com/atcoder/resources/problems.json");
-
-/** 難易度推定値取得 */
-const getEstimatedDifficulties = () => gmFetchJson("https://kenkoooo.com/atcoder/resources/problem-models.json");
-
-/** ユーザーの提出取得 */
-const getSubmissions = (userScreenName) => gmFetchJson(`https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=${encodeURIComponent(userScreenName)}&from_second=0`);
+const getProblems = () => gmFetchJson("https://cdn.jsdelivr.net/gh/tee-73009/atcoder-script@main/data/problems.json");
+const getEstimatedDifficulties = () => gmFetchJson("https://cdn.jsdelivr.net/gh/tee-73009/atcoder-script@main/data/problem-models.json");
+const getSubmissions = (userScreenName) => gmFetchJson("https://cdn.jsdelivr.net/gh/tee-73009/atcoder-script@main/data/submissions.json");
 window.getSubmissions = getSubmissions;
 const nonPenaltyJudge = ["AC", "CE", "IE", "WJ", "WR"];
 /** 設定 ネタバレ防止のID, Key */
