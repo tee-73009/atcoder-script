@@ -3588,6 +3588,7 @@ getSubmissions(userScreenName).then(colorize).catch(e => alert("colorizer: " + e
     })();
     // atcoder-tasks-page-colorize-during-contests
     (function(){
+if (!/\/contests\/[^/]+\/tasks\/?$/.test(location.pathname)) return;
 const fetchJson = async (url) => {
     const res = await fetch(url);
     if (!res.ok) {
