@@ -1,4 +1,4 @@
-window.GM_xmlhttpRequest = ({url, onload, onerror}) => { fetch(url).then(async r => onload({status: r.status, responseText: await r.text()})).catch(onerror); };
+window.GM_xmlhttpRequest = ({url, onload, onerror}) => { fetch(url, {cache: "no-store"}).then(async r => onload({status: r.status, responseText: await r.text()})).catch(onerror); };
 window.GM_addStyle = css => { const s = document.createElement("style"); s.textContent = css; document.head.appendChild(s); };
 window.GM_getValue = (k, d) => { const v = localStorage.getItem("GM_" + k); return v === null ? d : JSON.parse(v); };
 window.GM_setValue = (k, v) => localStorage.setItem("GM_" + k, JSON.stringify(v));
