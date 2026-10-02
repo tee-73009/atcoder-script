@@ -36,6 +36,7 @@ const getEstimatedDifficulties = () => gmFetchJson("https://kenkoooo.com/atcoder
 
 /** ユーザーの提出取得 */
 const getSubmissions = (userScreenName) => gmFetchJson(`https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=${encodeURIComponent(userScreenName)}&from_second=0`);
+window.getSubmissions = getSubmissions;
 const nonPenaltyJudge = ["AC", "CE", "IE", "WJ", "WR"];
 /** 設定 ネタバレ防止のID, Key */
 const hideDifficultyID = "hide-difficulty-atcoder-difficulty-display";
@@ -915,6 +916,7 @@ const settingPageProcess = () => {
 })().catch((error) => {
     // eslint-disable-next-line no-console
     console.error("[atcoder-difficulty-display]", error);
+    alert("difficulty: " + error);
 });
     })();
     // Atcoder Easy Test v2
@@ -3567,6 +3569,7 @@ var hTestAllSamples = "<button type=\"button\" id=\"atcoder-easy-test-btn-test-a
     })();
     // atcoder-tasks-page-colorizer
     (function(){
+if (!/\/contests\/[^/]+\/tasks\/?$/.test(location.pathname)) return;
 if (moment() < endTime) return;
 
 $('#main-div thead th:last-child').before('<th width="10%" class="text-center">最終提出</th>');
@@ -5335,6 +5338,7 @@ if (isExtendedStandingsPage()) {
     })();
     //AtcoderColorStandings
     (function(){
+  if (!/\/standings(\/|$)/.test(location.pathname)) return;
   // RGBからカラーコードに変換する
   function rgb2hex ( rgb ) {
     return "#" + rgb.map( function ( value ) {
@@ -5538,6 +5542,7 @@ if (isExtendedStandingsPage()) {
     })();
     //AtcoderStandingsAnalysis
     (function(){
+if (!/\/standings(\/|$)/.test(location.pathname)) return;
 // ソート済み配列のうちval未満が何個あるか求める
 function countLower(arr, val) {
   var lo = -1;
