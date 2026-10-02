@@ -15,7 +15,18 @@ jobs:
           mkdir -p data
           curl -sf https://kenkoooo.com/atcoder/resources/problems.json -o data/problems.json
           curl -sf https://kenkoooo.com/atcoder/resources/problem-models.json -o data/problem-models.json
-          curl -sf "https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=tee_73009&from_second=0" -o data/submissions.json
+          user=tee_73009
+          from=0
+          echo '[]' > all.json
+          while true; do
+            curl -sf "https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=$user&from_second=$from" -o page.json
+            n=$(jq length page.json)
+            [ "$n" -eq 0 ] && break
+            jq -s 'add | unique_by(.id)' all.json page.json > tmp.json && mv tmp.json all.json
+            [ "$n" -lt 500 ] && break
+            from=$(jq '[.[].epoch_second] | max' page.json)
+          done
+          mv all.json data/submissions.json
       - name: commit
         run: |
           git config user.name github-actions
