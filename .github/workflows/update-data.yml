@@ -1,0 +1,29 @@
+name: update-data
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fetch
+        run: |
+          mkdir -p data
+          curl -sf https://kenkoooo.com/atcoder/resources/problems.json -o data/problems.json
+          curl -sf https://kenkoooo.com/atcoder/resources/problem-models.json -o data/problem-models.json
+          curl -sf "https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=tee_73009&from_second=0" -o data/submissions.json
+      - name: commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add data
+          git diff --cached --quiet || (git commit -m "update data" && git push)
+      - name: purge cache
+        run: |
+          for f in problems problem-models submissions; do
+            curl -s "https://purge.jsdelivr.net/gh/tee-73009/atcoder-script@main/data/$f.json" > /dev/null
+          done
