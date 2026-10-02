@@ -3585,6 +3585,7 @@ function colorize(problems_info) {
 		if(submitted) row.classList.add(is_accepted ? 'success' : 'warning');
     }
 }
+getSubmissions(userScreenName).then(colorize).catch(e => alert("colorizer: " + e));
     })();
     //ac-predictor
     (function(){
