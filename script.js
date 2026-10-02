@@ -3568,7 +3568,6 @@ if (!/\/contests\/[^/]+\/tasks\/?$/.test(location.pathname)) return;
 if (moment() < endTime) return;
 
 $('#main-div thead th:last-child').before('<th width="10%" class="text-center">最終提出</th>');
-getSubmissions(userScreenName).then(colorize);
 
 function colorize(problems_info) {
 	$('#main-div tbody tr').each((x,y) => {
