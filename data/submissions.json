@@ -22834,5 +22834,17 @@
     "length": 11032,
     "result": "AC",
     "execution_time": 320
+  },
+  {
+    "id": 79848430,
+    "epoch_second": 1791412100,
+    "problem_id": "abc242_f",
+    "contest_id": "abc242",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 500.0,
+    "length": 11872,
+    "result": "AC",
+    "execution_time": 58
   }
 ]
