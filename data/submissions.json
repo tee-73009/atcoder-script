@@ -23386,5 +23386,89 @@
     "length": 24243,
     "result": "AC",
     "execution_time": 138
+  },
+  {
+    "id": 80649279,
+    "epoch_second": 1794052856,
+    "problem_id": "abc483_a",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 100.0,
+    "length": 20729,
+    "result": "AC",
+    "execution_time": 2
+  },
+  {
+    "id": 80666205,
+    "epoch_second": 1794054374,
+    "problem_id": "abc483_f",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 500.0,
+    "length": 22693,
+    "result": "AC",
+    "execution_time": 853
+  },
+  {
+    "id": 80671194,
+    "epoch_second": 1794055139,
+    "problem_id": "abc483_d",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 400.0,
+    "length": 21157,
+    "result": "AC",
+    "execution_time": 18
+  },
+  {
+    "id": 80673613,
+    "epoch_second": 1794055553,
+    "problem_id": "abc483_b",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 200.0,
+    "length": 20897,
+    "result": "AC",
+    "execution_time": 1
+  },
+  {
+    "id": 80681793,
+    "epoch_second": 1794057076,
+    "problem_id": "abc483_c",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 0.0,
+    "length": 21446,
+    "result": "WA",
+    "execution_time": 81
+  },
+  {
+    "id": 80682233,
+    "epoch_second": 1794057165,
+    "problem_id": "abc483_c",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 300.0,
+    "length": 21482,
+    "result": "AC",
+    "execution_time": 66
+  },
+  {
+    "id": 80687890,
+    "epoch_second": 1794058336,
+    "problem_id": "abc483_e",
+    "contest_id": "abc483",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 450.0,
+    "length": 21202,
+    "result": "AC",
+    "execution_time": 1977
   }
 ]
