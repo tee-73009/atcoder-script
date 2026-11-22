@@ -23626,5 +23626,65 @@
     "length": 21518,
     "result": "AC",
     "execution_time": 265
+  },
+  {
+    "id": 81033740,
+    "epoch_second": 1795352507,
+    "problem_id": "arc234_a",
+    "contest_id": "arc234",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 0.0,
+    "length": 1310,
+    "result": "CE",
+    "execution_time": null
+  },
+  {
+    "id": 81033747,
+    "epoch_second": 1795352524,
+    "problem_id": "arc234_a",
+    "contest_id": "arc234",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 700.0,
+    "length": 21856,
+    "result": "AC",
+    "execution_time": 306
+  },
+  {
+    "id": 81036055,
+    "epoch_second": 1795357674,
+    "problem_id": "arc234_c",
+    "contest_id": "arc234",
+    "user_id": "tee_73009",
+    "language": "C++23 (GCC 15.2.0)",
+    "point": 0.0,
+    "length": 21102,
+    "result": "WA",
+    "execution_time": 2
+  },
+  {
+    "id": 81036170,
+    "epoch_second": 1795357809,
+    "problem_id": "arc234_c",
+    "contest_id": "arc234",
+    "user_id": "tee_73009",
+    "language": "Text (cat 9.4)",
+    "point": 900.0,
+    "length": 18103,
+    "result": "AC",
+    "execution_time": 1
+  },
+  {
+    "id": 81036744,
+    "epoch_second": 1795359801,
+    "problem_id": "arc234_c",
+    "contest_id": "arc234",
+    "user_id": "tee_73009",
+    "language": "Text (cat 9.4)",
+    "point": 0.0,
+    "length": 21125,
+    "result": "WA",
+    "execution_time": 1
   }
 ]
