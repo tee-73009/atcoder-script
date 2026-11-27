@@ -23710,5 +23710,17 @@
     "length": 2385,
     "result": "AC",
     "execution_time": 1412
+  },
+  {
+    "id": 81100832,
+    "epoch_second": 1795755744,
+    "problem_id": "joig2025_a",
+    "contest_id": "joig2025-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 687,
+    "result": "AC",
+    "execution_time": 27
   }
 ]
