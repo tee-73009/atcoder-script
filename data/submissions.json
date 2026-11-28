@@ -23758,5 +23758,53 @@
     "length": 2674,
     "result": "AC",
     "execution_time": 1
+  },
+  {
+    "id": 81112042,
+    "epoch_second": 1795830207,
+    "problem_id": "joig2024_c",
+    "contest_id": "joig2024-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 2952,
+    "result": "AC",
+    "execution_time": 1062
+  },
+  {
+    "id": 81112067,
+    "epoch_second": 1795830391,
+    "problem_id": "joig2024_c",
+    "contest_id": "joig2024-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 2952,
+    "result": "AC",
+    "execution_time": 578
+  },
+  {
+    "id": 81112499,
+    "epoch_second": 1795833327,
+    "problem_id": "joi2025ho_b",
+    "contest_id": "joi2025ho",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 2967,
+    "result": "AC",
+    "execution_time": 100
+  },
+  {
+    "id": 81113161,
+    "epoch_second": 1795836575,
+    "problem_id": "joi2021_yo2_d",
+    "contest_id": "joi2021yo2",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 3161,
+    "result": "AC",
+    "execution_time": 32
   }
 ]
