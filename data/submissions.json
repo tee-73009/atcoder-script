@@ -23722,5 +23722,41 @@
     "length": 687,
     "result": "AC",
     "execution_time": 27
+  },
+  {
+    "id": 81111178,
+    "epoch_second": 1795818672,
+    "problem_id": "joig2025_c",
+    "contest_id": "joig2025-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 3092,
+    "result": "AC",
+    "execution_time": 97
+  },
+  {
+    "id": 81111189,
+    "epoch_second": 1795818937,
+    "problem_id": "joig2021_a",
+    "contest_id": "joig2021-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 2416,
+    "result": "AC",
+    "execution_time": 1
+  },
+  {
+    "id": 81111204,
+    "epoch_second": 1795819140,
+    "problem_id": "joig2021_b",
+    "contest_id": "joig2021-open",
+    "user_id": "tee_73009",
+    "language": "C++ IOI-Style(GNU++20) (GCC 14.2.0)",
+    "point": 100.0,
+    "length": 2674,
+    "result": "AC",
+    "execution_time": 1
   }
 ]
